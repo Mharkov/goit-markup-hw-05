@@ -63,10 +63,15 @@ body{
 .Header{
 
     width: 1600px;
-    border-bottom: 1px solid #ECECEC;
     margin-left: auto;
     margin-right: auto;
 }
+
+.Header-Portfolio{
+    border-bottom: 1px solid #ECECEC;
+
+}
+
 
 .Header .conteiner{
 
@@ -89,6 +94,7 @@ body{
 .navigation-list{
 
    display: flex;
+    
 
 }
 
@@ -124,7 +130,8 @@ body{
 
     position: relative;
 }
-.navigation-list-item::after{
+.Studio::after,
+.Portfolio::after{
     position: absolute;
     content: '';
     display: block;
@@ -132,7 +139,10 @@ body{
     height: 4px;
     background: #2196F3;
     border-radius: 2px;
+    bottom: 0;
 }
+
+
 
 .navigation-list a:hover,
 .navigation-list a:focus{
@@ -901,17 +911,19 @@ background-color:rgba(33, 150, 243, 0.9);
 .projects-works-list-link:focus .projects-works-text{
 
     opacity: 1;
-    transform: translateY(-294PX);
+    transform: translateY(-100%);
+   
 }
 
 .projects-works-text{
     position: absolute;
-    opacity: 0;
+    opacity: 0; 
    padding:63px 24px;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.56;
     top: 100%;
+    
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
